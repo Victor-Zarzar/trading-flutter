@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             SafeArea(child: SizedBox(
-              height: MediaQuery.of(context).size.height / 2.5,
+              height: MediaQuery.of(context).size.height / 2.6,
               child: Column(
                 children: <Widget>[
                   Align(
@@ -50,6 +50,18 @@ class HomePage extends StatelessWidget {
                 topLeft: Radius.circular(65),
                 topRight: Radius.circular(65),
               ),
+              ),
+              child: Column(
+                children: <Widget>[
+                  Center(
+                    child: Text('top 10 instruments'.toUpperCase(), style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                     color: Colors.black,
+                     fontWeight: FontWeight.bold,
+                     fontSize: 14,
+                    ),
+                    ),
+                  ),
+                ],
               ),
             ),
             ),
