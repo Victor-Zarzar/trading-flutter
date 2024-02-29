@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:trading_app_flutter/pages/price_eur_usd.dart";
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -38,6 +39,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const PriceEurUsd()
                 ],
               ),
             ),
